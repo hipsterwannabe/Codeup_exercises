@@ -42,7 +42,7 @@ elseif ($b != $c) {
     echo "$b is not equal to $c\n";
 }
 
-if ($b !== $c) {
+else {
      // output the appropriate result
     echo "$b is not identical to $c\n";
 }
