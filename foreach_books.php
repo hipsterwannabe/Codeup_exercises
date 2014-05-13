@@ -27,13 +27,14 @@ $books = array(
 //Construct a loop that iterates through each book and then each book's keys and values. 
 //Have it output the book's title, 
 //then list the key value pairs for the data about each book.
+//Update your loop to only show books that were written after 1950.
 
 foreach ($books as $titles => $details) {
+	if ($details['published'] > 1950){
 	echo "$titles".PHP_EOL;
-	echo "Released in " . $details['published'] . ".".PHP_EOL;
-	echo "Written by " . $details['author'] . " . ".PHP_EOL;
-	echo "It is " . $details['pages'] . " pages long.".PHP_EOL;
-	
+	//echo "Released in " . $details['published'] . ".".PHP_EOL;
+	//echo "Written by " . $details['author'] . " . ".PHP_EOL;
+	//echo "It is " . $details['pages'] . " pages long.".PHP_EOL;
 }
-
+}
 ?>
