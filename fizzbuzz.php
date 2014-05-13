@@ -5,8 +5,20 @@
 //and for the multiples of five print “Buzz”. For numbers which are multiples 
 //of both three and five print “FizzBuzz”.
 
-//for ( $i=1 ; $i <= 100 ; $i++) { 
-//	if ($i % 15 == 0){
+for ( $i=1 ; $i <= 100 ; $i++) { 
+	if ($i % 15 == 0){
+		echo "FizzBuzz\n";
+	} elseif ($i % 5 == 0) {
+		echo "Buzz\n";
+	} elseif ($i % 3 == 0){
+		echo "Fizz\n";
+	} else {
+		echo "$i\n";
+	}
+}
+
+//$i = 1;
+//do {if ($i % 15 == 0){
 //		echo "FizzBuzz\n";
 //	} elseif ($i % 5 == 0) {
 //		echo "Buzz\n";
@@ -14,18 +26,7 @@
 //		echo "Fizz\n";
 //	} else
 //	echo "$i\n";
-//}
-
-$i = 1;
-do {if ($i % 15 == 0){
-		echo "FizzBuzz\n";
-	} elseif ($i % 5 == 0) {
-		echo "Buzz\n";
-	} elseif ($i % 3 == 0){
-		echo "Fizz\n";
-	} else
-	echo "$i\n";
-	$i++;
-} while ($i <= 100);
+//	$i++;
+//} while ($i <= 100);
 
 ?>
