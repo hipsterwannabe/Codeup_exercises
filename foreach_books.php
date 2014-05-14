@@ -30,11 +30,10 @@ $books = array(
 //Update your loop to only show books that were written after 1950.
 
 foreach ($books as $titles => $details) {
-	if ($details['published'] > 1950){
 	echo "$titles".PHP_EOL;
-	//echo "Released in " . $details['published'] . ".".PHP_EOL;
-	//echo "Written by " . $details['author'] . " . ".PHP_EOL;
-	//echo "It is " . $details['pages'] . " pages long.".PHP_EOL;
-}
+	echo "Released in " . $details['published'] . ".".PHP_EOL;
+	echo "Written by " . $details['author'] . " . ".PHP_EOL;
+	echo "It is " . $details['pages'] . " pages long.".PHP_EOL;
+
 }
 ?>
