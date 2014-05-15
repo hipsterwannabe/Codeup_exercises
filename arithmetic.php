@@ -37,10 +37,12 @@ function multiply($a, $b) {
 }
 
 function divide($a, $b) {
-	if (is_numeric($a) && is_numeric($b)){
-    echo $a / $b.PHP_EOL;
+	if ($b == 0){
+    echo 'You cannot divide by zero, yo!'.PHP_EOL;
+} elseif (is_numeric($a) && is_numeric($b)) {
+	echo $a / $b.PHP_EOL;
 } else {
-	echo '$a and $b should be numeric, yo!'.PHP_EOL;
+ 	echo '$a and $b should be numeric, yo!'.PHP_EOL;
 }
 }
 
@@ -54,6 +56,6 @@ function modulus($a, $b) {
 
 add(1, 'dog');
 subtract(10, 4);
-multiply(true, 'omar');
-divide(10, 3);
-modulus(null, 4);
+multiply(7, 14);
+divide(0, 9);
+modulus(13, 4);
