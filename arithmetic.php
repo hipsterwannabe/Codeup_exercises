@@ -17,14 +17,14 @@ function add($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
     	echo $a + $b.PHP_EOL;
 	} else {
-		echo '$a and $b should be numeric, yo!'.PHP_EOL;
+		echo $a . ' and ' . $b  . ' should be numeric, yo!'.PHP_EOL;
 	}
 }
 function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)){
 		echo $a - $b.PHP_EOL;
 	} else {
-		echo '$a and $b should be numeric, yo!'.PHP_EOL;
+		echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
 	}
 }
 
@@ -32,7 +32,7 @@ function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)){
     echo $a * $b.PHP_EOL;
 } else {
-	echo '$a and $b should be numeric, yo!'.PHP_EOL;
+	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
 }
 }
 
@@ -42,7 +42,7 @@ function divide($a, $b) {
 } elseif (is_numeric($a) && is_numeric($b)) {
 	echo $a / $b.PHP_EOL;
 } else {
- 	echo '$a and $b should be numeric, yo!'.PHP_EOL;
+ 	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
 }
 }
 
@@ -50,12 +50,12 @@ function modulus($a, $b) {
 	if (is_numeric($a) && is_numeric($b)){
 	echo $a % $b.PHP_EOL;
 } else {
-	echo '$a and $b should be numeric, yo!'.PHP_EOL;
+	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
 }
 }
 
 add(1, 'dog');
 subtract(10, 4);
-multiply(7, 14);
+multiply('banana', 14);
 divide(0, 9);
 modulus(13, 4);
