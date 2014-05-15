@@ -27,7 +27,7 @@ function error($a, $b){
 
 function add($a, $b) {
 	if (error($a, $b)) {
-		return $a + $b;
+		return $a + $b . PHP_EOL;
 	}
 }
 
@@ -49,7 +49,7 @@ function multiply($a, $b) {
 
 function divide($a, $b) {
 	if ($b == 0){
-    	return 'You cannot divide by zero, yo!' . PHP_EOL;
+    	return false;
 } 	elseif (is_numeric($a) && is_numeric($b)) {
 		return $a / $b . PHP_EOL;
 } 	else {
