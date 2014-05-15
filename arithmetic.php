@@ -11,20 +11,22 @@
 //    have the other functions use it for error messaging.
 
 
-
+function error($a, $b){
+	echo $a . ' and ' . $b  . ' should be numeric, yo!'.PHP_EOL;
+}
 
 function add($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
     	echo $a + $b.PHP_EOL;
 	} else {
-		echo $a . ' and ' . $b  . ' should be numeric, yo!'.PHP_EOL;
+		error($a, $b);
 	}
 }
 function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)){
 		echo $a - $b.PHP_EOL;
 	} else {
-		echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
+		error($a, $b);
 	}
 }
 
@@ -32,7 +34,7 @@ function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)){
     echo $a * $b.PHP_EOL;
 } else {
-	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
+	error($a, $b);
 }
 }
 
@@ -42,7 +44,7 @@ function divide($a, $b) {
 } elseif (is_numeric($a) && is_numeric($b)) {
 	echo $a / $b.PHP_EOL;
 } else {
- 	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
+ 	error($a, $b);
 }
 }
 
@@ -50,11 +52,12 @@ function modulus($a, $b) {
 	if (is_numeric($a) && is_numeric($b)){
 	echo $a % $b.PHP_EOL;
 } else {
-	echo $a . ' and ' . $b . ' should be numeric, yo!'.PHP_EOL;
+	error($a, $b);
 }
 }
 
-add(1, 'dog');
+
+add(1, 7);
 subtract(10, 4);
 multiply('banana', 14);
 divide(0, 9);
