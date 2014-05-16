@@ -1,7 +1,7 @@
 <?php
 
 $nothing = NULL;
-$something = '';
+$something = 72;
 $array = array(1,2,3);
 
 // Create a function that checks if a variable is set or empty, 
@@ -9,20 +9,20 @@ $array = array(1,2,3);
 
 function setEmpty($var){
 	if (isset($var)) {
-		echo "Variable is set, boss!\n";
+		echo "$var is set, boss!\n";
 	} elseif (empty($var)) {
-		echo "Variable is empty, boss!\n";
+		echo "$var is empty, boss!\n";
 	}
 }
 
 setEmpty($nothing);
 setEmpty($something);
 setEmpty($array);
-// TEST: If var $nothing is set, display '$nothing is SET'
+// TEST: If var $nothing is set, display 'variable is SET'
 
-// TEST: If var $nothing is empty, display '$nothing is EMPTY'
+// TEST: If var $nothing is empty, display 'variable is EMPTY'
 
-// TEST: If var $something is set, display '$something is SET'
+// TEST: If var $something is set, display 'variable is SET'
 
 // Serialize the array $array, and output the results
 
