@@ -1,6 +1,6 @@
 <?php
 
-$nothing = NULL;
+$nothing = 'empty';
 $something = 72;
 $array = array(1,2,3);
 
@@ -15,6 +15,7 @@ function setEmpty($var){
 	}
 }
 
+unset($nothing);
 setEmpty($nothing);
 setEmpty($something);
 setEmpty($array);
@@ -28,16 +29,16 @@ setEmpty($array);
 
 // Unserialize the array $array, and output the results
 //-----------------------------------------------------
-// Create the program to meet the criteria set by each comment.
+// 1.Create the program to meet the criteria set by each comment.
 
-// Test and verify the output is as expected.
+// 2.Test and verify the output is as expected.
 
-// Update the 'is set' check on $something to see if it is 'empty'. What happens?
+// 3.Update the 'is set' check on $something to see if it is 'empty'. What happens?
 
-// Revert previous change.
+// 4.Revert previous change.
 
-// Before the first conditional, unset($nothing). What happens?
+// 5.Before the first conditional, unset($nothing). What happens?
 
-// Find php.net function reference for the following groups: arrays, math, and strings. 
+// 6.Find php.net function reference for the following groups: arrays, math, and strings. 
 // Familiarize yourself with the available options by reading the descriptions of 
 // each function in each list.
