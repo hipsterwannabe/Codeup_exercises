@@ -12,9 +12,11 @@
 
 // STEP 5: Default alphabetical sorting to false. If no args are passed, no sorting takes place.
 
-function humanized_list($array){
+function humanized_list($array, $sort){
 	$end_of_array = array_pop($array);
-	asort($array);
+	if ($sort){
+		asort($array);
+	}
 	array_push($array, 'and ' . $end_of_array);
 	return implode(', ', $array);
 }
@@ -22,7 +24,7 @@ function humanized_list($array){
 $physicists_string = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mallory, Bruce Banner, Tony Stark';
 
 $physicists_array = explode(', ', $physicists_string);
-$famous_fake_physicists = humanized_list($physicists_array);
+$famous_fake_physicists = humanized_list($physicists_array, false);
 
 
 echo "Some of the most famous fictional theoretical physicists are {$famous_fake_physicists}.\n";
